@@ -61,11 +61,5 @@ for i in range(H1, H2+1):
         outputImage[i, j] = image4[i - H1, j - W1]
 
 
-# Show image
-cv2.imshow((sys.argv[0]).replace(".py", ""), outputImage)
 # Save image
 cv2.imwrite(name_output, outputImage)
-
-# wait for key to exit
-cv2.waitKey(0)
-cv2.destroyAllWindows()
